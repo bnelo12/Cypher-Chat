@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46FADA5AD88AF3BE70F01DE1 /* Pods_Cypher_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13CF9CC1B1058279A3751A8 /* Pods_Cypher_Chat.framework */; };
+		B5293ED31C99C2FA00104FDE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5293ED21C99C2FA00104FDE /* ForgotPasswordViewController.swift */; };
+		B5293ED51C9A4C6D00104FDE /* TokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5293ED41C9A4C6D00104FDE /* TokenViewController.swift */; };
+		B5293ED71C9A9EBB00104FDE /* STPPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5293ED61C9A9EBB00104FDE /* STPPaymentViewController.swift */; };
+		B52A71771C9CC05900EB8642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52A71761C9CC05900EB8642 /* Main.storyboard */; };
+		B52A717A1C9F30AB00EB8642 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52A71791C9F30AB00EB8642 /* SWRevealViewController.m */; };
+		B52A717C1C9F360800EB8642 /* message_sent_alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B52A717B1C9F360800EB8642 /* message_sent_alert.mp3 */; };
+		B52A717E1C9F376D00EB8642 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B52A717D1C9F376D00EB8642 /* logo.png */; };
+		B5415C981CB5A2CF000CD19D /* AccountStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5415C971CB5A2CF000CD19D /* AccountStatus.swift */; };
+		B5415C9A1CB5B64F000CD19D /* login-rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = B5415C991CB5B64F000CD19D /* login-rectangle.png */; };
+		B5708F0D1CA46010005D1ADC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5708F0C1CA46010005D1ADC /* QuartzCore.framework */; };
+		B5909E961C81A84600CCFF7E /* SaveMostRecentMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5909E951C81A84600CCFF7E /* SaveMostRecentMessage.swift */; };
+		B5909E9D1C81AEAD00CCFF7E /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5909E9C1C81AEAD00CCFF7E /* SearchUsersViewController.swift */; };
+		B596014B1CB723BE00F0A047 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596014A1CB723BE00F0A047 /* ColorPickerViewController.swift */; };
+		B596D6271CC68B7D003A68F2 /* SaveMessageOnParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596D6261CC68B7D003A68F2 /* SaveMessageOnParse.swift */; };
+		B59AD52A1CACDB0300FAE8CF /* AccountEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AD5291CACDB0300FAE8CF /* AccountEditViewController.swift */; };
+		B5A146A51C87F8FC0063E9CD /* SINMessagetoCMChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A146A41C87F8FC0063E9CD /* SINMessagetoCMChatMessage.swift */; };
+		B5A9AD371C7D34C5007C78CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A9AD361C7D34C5007C78CA /* AppDelegate.swift */; };
+		B5A9AD401C7D34C6007C78CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A9AD3F1C7D34C6007C78CA /* Assets.xcassets */; };
+		B5A9AD431C7D34C6007C78CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A9AD411C7D34C6007C78CA /* LaunchScreen.storyboard */; };
+		B5A9AD591C7D34C6007C78CA /* CryptChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A9AD581C7D34C6007C78CA /* CryptChatUITests.swift */; };
+		B5BFDD111CAB3A3D00AC090B /* privacy-policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5BFDD0F1CAB3A3D00AC090B /* privacy-policy.pdf */; };
+		B5BFDD121CAB3A3D00AC090B /* terms-of-service.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5BFDD101CAB3A3D00AC090B /* terms-of-service.pdf */; };
+		B5BFDD141CAB3A7400AC090B /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFDD131CAB3A7400AC090B /* DocumentViewController.swift */; };
+		B5CD52641C8151C400A65CFD /* Convo-send-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CD52631C8151C400A65CFD /* Convo-send-button.png */; };
+		B5CD52691C81761C00A65CFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD52681C81761C00A65CFD /* AVFoundation.framework */; };
+		B5D610F71C91F4CE00ED44DE /* AccountGenerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D610F61C91F4CE00ED44DE /* AccountGenerationViewController.swift */; };
+		B5F207C01C9732DF007E934C /* EmptyDataSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F207BF1C9732DF007E934C /* EmptyDataSetViewController.swift */; };
+		B5F207C51C990364007E934C /* EmptyDataSetMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F207C41C990364007E934C /* EmptyDataSetMessagesViewController.swift */; };
+		B5F207E31C991FAB007E934C /* app_icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207D71C991FAB007E934C /* app_icon-29.png */; };
+		B5F207E41C991FAB007E934C /* app_icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207D81C991FAB007E934C /* app_icon-29@2x.png */; };
+		B5F207E51C991FAB007E934C /* app_icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207D91C991FAB007E934C /* app_icon-29@3x.png */; };
+		B5F207E61C991FAB007E934C /* app_icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DA1C991FAB007E934C /* app_icon-40.png */; };
+		B5F207E71C991FAB007E934C /* app_icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DB1C991FAB007E934C /* app_icon-40@2x.png */; };
+		B5F207E81C991FAB007E934C /* app_icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DC1C991FAB007E934C /* app_icon-40@3x.png */; };
+		B5F207E91C991FAB007E934C /* app_icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DD1C991FAB007E934C /* app_icon-60@2x.png */; };
+		B5F207EA1C991FAB007E934C /* app_icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DE1C991FAB007E934C /* app_icon-60@3x.png */; };
+		B5F207EB1C991FAB007E934C /* app_icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207DF1C991FAB007E934C /* app_icon-76.png */; };
+		B5F207EC1C991FAB007E934C /* app_icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207E01C991FAB007E934C /* app_icon-76@2x.png */; };
+		B5F207ED1C991FAB007E934C /* app_icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207E11C991FAB007E934C /* app_icon-512.png */; };
+		B5F207EE1C991FAB007E934C /* app_icon-512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207E21C991FAB007E934C /* app_icon-512@2x.png */; };
+		B5F207F01C9920E1007E934C /* app_icon83.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F207EF1C9920E1007E934C /* app_icon83.png */; };
+		B5F70CCE1C7D38CB00EC59A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70CCD1C7D38CB00EC59A1 /* LoginViewController.swift */; };
+		B5F70CD41C7D588D00EC59A1 /* Intro-_0000s_0000_Layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CD01C7D588D00EC59A1 /* Intro-_0000s_0000_Layer-2.png */; };
+		B5F70CD51C7D588D00EC59A1 /* Intro-_0000s_0001_log-in.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CD11C7D588D00EC59A1 /* Intro-_0000s_0001_log-in.png */; };
+		B5F70CD61C7D588D00EC59A1 /* Intro-_0001s_0000_Sign-Up.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CD21C7D588D00EC59A1 /* Intro-_0001s_0000_Sign-Up.png */; };
+		B5F70CD71C7D588D00EC59A1 /* Intro-_0002s_0000_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CD31C7D588D00EC59A1 /* Intro-_0002s_0000_overlay.png */; };
+		B5F70CD91C7D5A7500EC59A1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70CD81C7D5A7500EC59A1 /* IntroViewController.swift */; };
+		B5F70CDB1C7D5BE700EC59A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CDA1C7D5BE700EC59A1 /* MobileCoreServices.framework */; };
+		B5F70CDD1C7D5BEF00EC59A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CDC1C7D5BEF00EC59A1 /* SystemConfiguration.framework */; };
+		B5F70CDF1C7D5BF800EC59A1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CDE1C7D5BF800EC59A1 /* StoreKit.framework */; };
+		B5F70CE11C7D5C0000EC59A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CE01C7D5C0000EC59A1 /* Security.framework */; };
+		B5F70CE31C7D5C0400EC59A1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CE21C7D5C0400EC59A1 /* Accounts.framework */; };
+		B5F70CE51C7D5C0A00EC59A1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CE41C7D5C0A00EC59A1 /* AdSupport.framework */; };
+		B5F70CE71C7D5C0F00EC59A1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CE61C7D5C0F00EC59A1 /* AudioToolbox.framework */; };
+		B5F70CE91C7D5C2200EC59A1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CE81C7D5C2200EC59A1 /* CFNetwork.framework */; };
+		B5F70CEB1C7D5C2D00EC59A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CEA1C7D5C2D00EC59A1 /* CoreGraphics.framework */; };
+		B5F70CED1C7D5C3600EC59A1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CEC1C7D5C3600EC59A1 /* CoreLocation.framework */; };
+		B5F70CEF1C7D5C5900EC59A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CEE1C7D5C5900EC59A1 /* Foundation.framework */; };
+		B5F70CF11C7D5C6F00EC59A1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CF01C7D5C6F00EC59A1 /* Social.framework */; };
+		B5F70CF31C7D5CBB00EC59A1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CF21C7D5CBB00EC59A1 /* libsqlite3.tbd */; };
+		B5F70CF51C7D5CCB00EC59A1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CF41C7D5CCB00EC59A1 /* libz.tbd */; };
+		B5F70CF71C7D5DE600EC59A1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CF61C7D5DE600EC59A1 /* Bolts.framework */; };
+		B5F70CF91C7D5DEE00EC59A1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CF81C7D5DEE00EC59A1 /* Parse.framework */; };
+		B5F70CFB1C7D5F9600EC59A1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F70CFA1C7D5F9600EC59A1 /* CoreMedia.framework */; };
+		B5F70CFD1C7D654300EC59A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70CFC1C7D654300EC59A1 /* SignUpViewController.swift */; };
+		B5F70D051C7D6AFA00EC59A1 /* Sign-_0000s_0000_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CFE1C7D6AFA00EC59A1 /* Sign-_0000s_0000_back.png */; };
+		B5F70D061C7D6AFA00EC59A1 /* Sign-_0000s_0001_Sign-in.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70CFF1C7D6AFA00EC59A1 /* Sign-_0000s_0001_Sign-in.png */; };
+		B5F70D071C7D6AFA00EC59A1 /* Sign-_0002s_0000_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D001C7D6AFA00EC59A1 /* Sign-_0002s_0000_arrow.png */; };
+		B5F70D081C7D6AFA00EC59A1 /* Sign-_0002s_0002_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D011C7D6AFA00EC59A1 /* Sign-_0002s_0002_button.png */; };
+		B5F70D091C7D6AFA00EC59A1 /* Sign-_0003s_0000_input-line.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D021C7D6AFA00EC59A1 /* Sign-_0003s_0000_input-line.png */; };
+		B5F70D0A1C7D6AFA00EC59A1 /* Sign-_0004s_0000_help.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D031C7D6AFA00EC59A1 /* Sign-_0004s_0000_help.png */; };
+		B5F70D0D1C7D83CE00EC59A1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D0C1C7D83CE00EC59A1 /* Config.swift */; };
+		B5F70D111C7E4DDE00EC59A1 /* sign-signup.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D101C7E4DDE00EC59A1 /* sign-signup.png */; };
+		B5F70D131C7E531E00EC59A1 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D121C7E531E00EC59A1 /* MessagesView.swift */; };
+		B5F70D171C7E9E9E00EC59A1 /* ChatMatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D161C7E9E9E00EC59A1 /* ChatMatesTableViewController.swift */; };
+		B5F70D1A1C7F769C00EC59A1 /* Message-NewIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D191C7F769C00EC59A1 /* Message-NewIcon.png */; };
+		B5F70D1C1C7F857B00EC59A1 /* Message-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D1B1C7F857B00EC59A1 /* Message-menu.png */; };
+		B5F70D1E1C7F87A300EC59A1 /* Message-Messages.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D1D1C7F87A300EC59A1 /* Message-Messages.png */; };
+		B5F70D201C7F894B00EC59A1 /* Message-new.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F70D1F1C7F894B00EC59A1 /* Message-new.png */; };
+		B5F70D271C7FBB7300EC59A1 /* Reveal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D261C7FBB7300EC59A1 /* Reveal.swift */; };
+		B5F70D291C7FC1EF00EC59A1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D281C7FC1EF00EC59A1 /* MenuViewController.swift */; };
+		B5F70D2B1C7FCB5F00EC59A1 /* CMDialogTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F70D2A1C7FCB5F00EC59A1 /* CMDialogTableTableViewController.swift */; };
+		B5F766461C8651E1003D77B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5F766451C8651E1003D77B2 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A9AD551C7D34C6007C78CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A9AD2B1C7D34C5007C78CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A9AD321C7D34C5007C78CA;
+			remoteInfo = CryptChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05897C3348093A52167705DE /* Pods-Cypher Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cypher Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cypher Chat/Pods-Cypher Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		90D05DAE9413C6B2EAACA177 /* Pods-Cypher Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cypher Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cypher Chat/Pods-Cypher Chat.release.xcconfig"; sourceTree = "<group>"; };
+		B5293ED21C99C2FA00104FDE /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B5293ED41C9A4C6D00104FDE /* TokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenViewController.swift; sourceTree = "<group>"; };
+		B5293ED61C9A9EBB00104FDE /* STPPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPPaymentViewController.swift; sourceTree = "<group>"; };
+		B52A71761C9CC05900EB8642 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B52A71781C9F30AB00EB8642 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "CryptChat/SWRevealViewController-master 2/SWRevealViewController/SWRevealViewController.h"; sourceTree = SOURCE_ROOT; };
+		B52A71791C9F30AB00EB8642 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "CryptChat/SWRevealViewController-master 2/SWRevealViewController/SWRevealViewController.m"; sourceTree = SOURCE_ROOT; };
+		B52A717B1C9F360800EB8642 /* message_sent_alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = message_sent_alert.mp3; path = Sounds/message_sent_alert.mp3; sourceTree = SOURCE_ROOT; };
+		B52A717D1C9F376D00EB8642 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images/logo.png; sourceTree = SOURCE_ROOT; };
+		B5415C971CB5A2CF000CD19D /* AccountStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountStatus.swift; sourceTree = "<group>"; };
+		B5415C991CB5B64F000CD19D /* login-rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-rectangle.png"; sourceTree = "<group>"; };
+		B5708F0C1CA46010005D1ADC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5909E951C81A84600CCFF7E /* SaveMostRecentMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveMostRecentMessage.swift; sourceTree = "<group>"; };
+		B5909E9C1C81AEAD00CCFF7E /* SearchUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
+		B596014A1CB723BE00F0A047 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		B596D6261CC68B7D003A68F2 /* SaveMessageOnParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveMessageOnParse.swift; sourceTree = "<group>"; };
+		B59AD5291CACDB0300FAE8CF /* AccountEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountEditViewController.swift; sourceTree = "<group>"; };
+		B5A146A41C87F8FC0063E9CD /* SINMessagetoCMChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SINMessagetoCMChatMessage.swift; sourceTree = "<group>"; };
+		B5A9AD331C7D34C5007C78CA /* Cypher Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cypher Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A9AD361C7D34C5007C78CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A9AD3F1C7D34C6007C78CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A9AD421C7D34C6007C78CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A9AD441C7D34C6007C78CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A9AD491C7D34C6007C78CA /* Cypher Chat.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cypher Chat.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A9AD4D1C7D34C6007C78CA /* CryptChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptChatTests.swift; sourceTree = "<group>"; };
+		B5A9AD4F1C7D34C6007C78CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A9AD541C7D34C6007C78CA /* Cypher Chat.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cypher Chat.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A9AD581C7D34C6007C78CA /* CryptChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptChatUITests.swift; sourceTree = "<group>"; };
+		B5A9AD5A1C7D34C6007C78CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BFDD0F1CAB3A3D00AC090B /* privacy-policy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "privacy-policy.pdf"; path = "PDFs/privacy-policy.pdf"; sourceTree = SOURCE_ROOT; };
+		B5BFDD101CAB3A3D00AC090B /* terms-of-service.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "terms-of-service.pdf"; path = "PDFs/terms-of-service.pdf"; sourceTree = SOURCE_ROOT; };
+		B5BFDD131CAB3A7400AC090B /* DocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		B5CD52631C8151C400A65CFD /* Convo-send-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Convo-send-button.png"; sourceTree = "<group>"; };
+		B5CD52681C81761C00A65CFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B5D610F61C91F4CE00ED44DE /* AccountGenerationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountGenerationViewController.swift; sourceTree = "<group>"; };
+		B5F207BF1C9732DF007E934C /* EmptyDataSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetViewController.swift; sourceTree = "<group>"; };
+		B5F207C41C990364007E934C /* EmptyDataSetMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyDataSetMessagesViewController.swift; sourceTree = "<group>"; };
+		B5F207D71C991FAB007E934C /* app_icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-29.png"; sourceTree = "<group>"; };
+		B5F207D81C991FAB007E934C /* app_icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-29@2x.png"; sourceTree = "<group>"; };
+		B5F207D91C991FAB007E934C /* app_icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-29@3x.png"; sourceTree = "<group>"; };
+		B5F207DA1C991FAB007E934C /* app_icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-40.png"; sourceTree = "<group>"; };
+		B5F207DB1C991FAB007E934C /* app_icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-40@2x.png"; sourceTree = "<group>"; };
+		B5F207DC1C991FAB007E934C /* app_icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-40@3x.png"; sourceTree = "<group>"; };
+		B5F207DD1C991FAB007E934C /* app_icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-60@2x.png"; sourceTree = "<group>"; };
+		B5F207DE1C991FAB007E934C /* app_icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-60@3x.png"; sourceTree = "<group>"; };
+		B5F207DF1C991FAB007E934C /* app_icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-76.png"; sourceTree = "<group>"; };
+		B5F207E01C991FAB007E934C /* app_icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-76@2x.png"; sourceTree = "<group>"; };
+		B5F207E11C991FAB007E934C /* app_icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-512.png"; sourceTree = "<group>"; };
+		B5F207E21C991FAB007E934C /* app_icon-512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_icon-512@2x.png"; sourceTree = "<group>"; };
+		B5F207EF1C9920E1007E934C /* app_icon83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon83.png; sourceTree = "<group>"; };
+		B5F70CCD1C7D38CB00EC59A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5F70CD01C7D588D00EC59A1 /* Intro-_0000s_0000_Layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro-_0000s_0000_Layer-2.png"; sourceTree = "<group>"; };
+		B5F70CD11C7D588D00EC59A1 /* Intro-_0000s_0001_log-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro-_0000s_0001_log-in.png"; sourceTree = "<group>"; };
+		B5F70CD21C7D588D00EC59A1 /* Intro-_0001s_0000_Sign-Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro-_0001s_0000_Sign-Up.png"; sourceTree = "<group>"; };
+		B5F70CD31C7D588D00EC59A1 /* Intro-_0002s_0000_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Intro-_0002s_0000_overlay.png"; sourceTree = "<group>"; };
+		B5F70CD81C7D5A7500EC59A1 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		B5F70CDA1C7D5BE700EC59A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B5F70CDC1C7D5BEF00EC59A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5F70CDE1C7D5BF800EC59A1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B5F70CE01C7D5C0000EC59A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B5F70CE21C7D5C0400EC59A1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B5F70CE41C7D5C0A00EC59A1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B5F70CE61C7D5C0F00EC59A1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B5F70CE81C7D5C2200EC59A1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5F70CEA1C7D5C2D00EC59A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5F70CEC1C7D5C3600EC59A1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B5F70CEE1C7D5C5900EC59A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5F70CF01C7D5C6F00EC59A1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B5F70CF21C7D5CBB00EC59A1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B5F70CF41C7D5CCB00EC59A1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B5F70CF61C7D5DE600EC59A1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B5F70CF81C7D5DEE00EC59A1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B5F70CFA1C7D5F9600EC59A1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B5F70CFC1C7D654300EC59A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B5F70CFE1C7D6AFA00EC59A1 /* Sign-_0000s_0000_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0000s_0000_back.png"; sourceTree = "<group>"; };
+		B5F70CFF1C7D6AFA00EC59A1 /* Sign-_0000s_0001_Sign-in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0000s_0001_Sign-in.png"; sourceTree = "<group>"; };
+		B5F70D001C7D6AFA00EC59A1 /* Sign-_0002s_0000_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0002s_0000_arrow.png"; sourceTree = "<group>"; };
+		B5F70D011C7D6AFA00EC59A1 /* Sign-_0002s_0002_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0002s_0002_button.png"; sourceTree = "<group>"; };
+		B5F70D021C7D6AFA00EC59A1 /* Sign-_0003s_0000_input-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0003s_0000_input-line.png"; sourceTree = "<group>"; };
+		B5F70D031C7D6AFA00EC59A1 /* Sign-_0004s_0000_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-_0004s_0000_help.png"; sourceTree = "<group>"; };
+		B5F70D0C1C7D83CE00EC59A1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B5F70D0E1C7D954200EC59A1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B5F70D101C7E4DDE00EC59A1 /* sign-signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign-signup.png"; sourceTree = "<group>"; };
+		B5F70D121C7E531E00EC59A1 /* MessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		B5F70D161C7E9E9E00EC59A1 /* ChatMatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMatesTableViewController.swift; sourceTree = "<group>"; };
+		B5F70D191C7F769C00EC59A1 /* Message-NewIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-NewIcon.png"; sourceTree = "<group>"; };
+		B5F70D1B1C7F857B00EC59A1 /* Message-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-menu.png"; sourceTree = "<group>"; };
+		B5F70D1D1C7F87A300EC59A1 /* Message-Messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-Messages.png"; sourceTree = "<group>"; };
+		B5F70D1F1C7F894B00EC59A1 /* Message-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message-new.png"; sourceTree = "<group>"; };
+		B5F70D251C7FA70300EC59A1 /* CypherChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CypherChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5F70D261C7FBB7300EC59A1 /* Reveal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reveal.swift; sourceTree = "<group>"; };
+		B5F70D281C7FC1EF00EC59A1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B5F70D2A1C7FCB5F00EC59A1 /* CMDialogTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMDialogTableTableViewController.swift; sourceTree = "<group>"; };
+		B5F766451C8651E1003D77B2 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F13CF9CC1B1058279A3751A8 /* Pods_Cypher_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cypher_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A9AD301C7D34C5007C78CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5708F0D1CA46010005D1ADC /* QuartzCore.framework in Frameworks */,
+				B5CD52691C81761C00A65CFD /* AVFoundation.framework in Frameworks */,
+				B5F70CFB1C7D5F9600EC59A1 /* CoreMedia.framework in Frameworks */,
+				B5F70CF91C7D5DEE00EC59A1 /* Parse.framework in Frameworks */,
+				B5F70CF71C7D5DE600EC59A1 /* Bolts.framework in Frameworks */,
+				B5F70CF51C7D5CCB00EC59A1 /* libz.tbd in Frameworks */,
+				B5F70CF31C7D5CBB00EC59A1 /* libsqlite3.tbd in Frameworks */,
+				B5F70CF11C7D5C6F00EC59A1 /* Social.framework in Frameworks */,
+				B5F70CEF1C7D5C5900EC59A1 /* Foundation.framework in Frameworks */,
+				B5F70CED1C7D5C3600EC59A1 /* CoreLocation.framework in Frameworks */,
+				B5F70CEB1C7D5C2D00EC59A1 /* CoreGraphics.framework in Frameworks */,
+				B5F70CE91C7D5C2200EC59A1 /* CFNetwork.framework in Frameworks */,
+				B5F70CE71C7D5C0F00EC59A1 /* AudioToolbox.framework in Frameworks */,
+				B5F70CE51C7D5C0A00EC59A1 /* AdSupport.framework in Frameworks */,
+				B5F70CE31C7D5C0400EC59A1 /* Accounts.framework in Frameworks */,
+				B5F70CE11C7D5C0000EC59A1 /* Security.framework in Frameworks */,
+				B5F70CDF1C7D5BF800EC59A1 /* StoreKit.framework in Frameworks */,
+				B5F70CDD1C7D5BEF00EC59A1 /* SystemConfiguration.framework in Frameworks */,
+				B5F70CDB1C7D5BE700EC59A1 /* MobileCoreServices.framework in Frameworks */,
+				46FADA5AD88AF3BE70F01DE1 /* Pods_Cypher_Chat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD461C7D34C6007C78CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD511C7D34C6007C78CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093E1FEFD39F2D888CA05F83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05897C3348093A52167705DE /* Pods-Cypher Chat.debug.xcconfig */,
+				90D05DAE9413C6B2EAACA177 /* Pods-Cypher Chat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BF5EDD39C4DD10881584104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5708F0C1CA46010005D1ADC /* QuartzCore.framework */,
+				B5CD52681C81761C00A65CFD /* AVFoundation.framework */,
+				B5F70D0E1C7D954200EC59A1 /* Parse.framework */,
+				B5F70CFA1C7D5F9600EC59A1 /* CoreMedia.framework */,
+				B5F70CF81C7D5DEE00EC59A1 /* Parse.framework */,
+				B5F70CF61C7D5DE600EC59A1 /* Bolts.framework */,
+				B5F70CF41C7D5CCB00EC59A1 /* libz.tbd */,
+				B5F70CF21C7D5CBB00EC59A1 /* libsqlite3.tbd */,
+				B5F70CF01C7D5C6F00EC59A1 /* Social.framework */,
+				B5F70CEE1C7D5C5900EC59A1 /* Foundation.framework */,
+				B5F70CEC1C7D5C3600EC59A1 /* CoreLocation.framework */,
+				B5F70CEA1C7D5C2D00EC59A1 /* CoreGraphics.framework */,
+				B5F70CE81C7D5C2200EC59A1 /* CFNetwork.framework */,
+				B5F70CE61C7D5C0F00EC59A1 /* AudioToolbox.framework */,
+				B5F70CE41C7D5C0A00EC59A1 /* AdSupport.framework */,
+				B5F70CE21C7D5C0400EC59A1 /* Accounts.framework */,
+				B5F70CE01C7D5C0000EC59A1 /* Security.framework */,
+				B5F70CDE1C7D5BF800EC59A1 /* StoreKit.framework */,
+				B5F70CDC1C7D5BEF00EC59A1 /* SystemConfiguration.framework */,
+				B5F70CDA1C7D5BE700EC59A1 /* MobileCoreServices.framework */,
+				F13CF9CC1B1058279A3751A8 /* Pods_Cypher_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5909E971C81A85200CCFF7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5909E951C81A84600CCFF7E /* SaveMostRecentMessage.swift */,
+				B5A146A41C87F8FC0063E9CD /* SINMessagetoCMChatMessage.swift */,
+				B596D6261CC68B7D003A68F2 /* SaveMessageOnParse.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5A9AD2A1C7D34C5007C78CA = {
+			isa = PBXGroup;
+			children = (
+				B5A9AD351C7D34C5007C78CA /* CryptChat */,
+				B5A9AD4C1C7D34C6007C78CA /* CryptChatTests */,
+				B5A9AD571C7D34C6007C78CA /* CryptChatUITests */,
+				B5A9AD341C7D34C5007C78CA /* Products */,
+				8BF5EDD39C4DD10881584104 /* Frameworks */,
+				093E1FEFD39F2D888CA05F83 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A9AD341C7D34C5007C78CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A9AD331C7D34C5007C78CA /* Cypher Chat.app */,
+				B5A9AD491C7D34C6007C78CA /* Cypher Chat.xctest */,
+				B5A9AD541C7D34C6007C78CA /* Cypher Chat.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A9AD351C7D34C5007C78CA /* CryptChat */ = {
+			isa = PBXGroup;
+			children = (
+				B5BFDD0E1CAB39ED00AC090B /* PDFS */,
+				B5A9AD361C7D34C5007C78CA /* AppDelegate.swift */,
+				B5CD52651C81746700A65CFD /* Sounds */,
+				B5F70D211C7F9C9700EC59A1 /* SWRevealViewController */,
+				B5909E971C81A85200CCFF7E /* Models */,
+				B5A9AD661C7D358E007C78CA /* Controllers */,
+				B5F70CCF1C7D588D00EC59A1 /* Images */,
+				B5A9AD411C7D34C6007C78CA /* LaunchScreen.storyboard */,
+				B52A71761C9CC05900EB8642 /* Main.storyboard */,
+				B5F70D0C1C7D83CE00EC59A1 /* Config.swift */,
+				B5415C971CB5A2CF000CD19D /* AccountStatus.swift */,
+				B5A9AD441C7D34C6007C78CA /* Info.plist */,
+				B5F70D251C7FA70300EC59A1 /* CypherChat-Bridging-Header.h */,
+				B5A9AD3F1C7D34C6007C78CA /* Assets.xcassets */,
+				B5F766451C8651E1003D77B2 /* Localizable.strings */,
+			);
+			path = CryptChat;
+			sourceTree = "<group>";
+		};
+		B5A9AD4C1C7D34C6007C78CA /* CryptChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A9AD4D1C7D34C6007C78CA /* CryptChatTests.swift */,
+				B5A9AD4F1C7D34C6007C78CA /* Info.plist */,
+			);
+			path = CryptChatTests;
+			sourceTree = "<group>";
+		};
+		B5A9AD571C7D34C6007C78CA /* CryptChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A9AD581C7D34C6007C78CA /* CryptChatUITests.swift */,
+				B5A9AD5A1C7D34C6007C78CA /* Info.plist */,
+			);
+			path = CryptChatUITests;
+			sourceTree = "<group>";
+		};
+		B5A9AD661C7D358E007C78CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5F70CCD1C7D38CB00EC59A1 /* LoginViewController.swift */,
+				B5F70CD81C7D5A7500EC59A1 /* IntroViewController.swift */,
+				B5F70CFC1C7D654300EC59A1 /* SignUpViewController.swift */,
+				B5F70D121C7E531E00EC59A1 /* MessagesView.swift */,
+				B5F70D261C7FBB7300EC59A1 /* Reveal.swift */,
+				B5F70D281C7FC1EF00EC59A1 /* MenuViewController.swift */,
+				B5F70D161C7E9E9E00EC59A1 /* ChatMatesTableViewController.swift */,
+				B5F70D2A1C7FCB5F00EC59A1 /* CMDialogTableTableViewController.swift */,
+				B5909E9C1C81AEAD00CCFF7E /* SearchUsersViewController.swift */,
+				B5D610F61C91F4CE00ED44DE /* AccountGenerationViewController.swift */,
+				B5F207BF1C9732DF007E934C /* EmptyDataSetViewController.swift */,
+				B5F207C41C990364007E934C /* EmptyDataSetMessagesViewController.swift */,
+				B5293ED21C99C2FA00104FDE /* ForgotPasswordViewController.swift */,
+				B5293ED41C9A4C6D00104FDE /* TokenViewController.swift */,
+				B5293ED61C9A9EBB00104FDE /* STPPaymentViewController.swift */,
+				B5BFDD131CAB3A7400AC090B /* DocumentViewController.swift */,
+				B59AD5291CACDB0300FAE8CF /* AccountEditViewController.swift */,
+				B596014A1CB723BE00F0A047 /* ColorPickerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B5BFDD0E1CAB39ED00AC090B /* PDFS */ = {
+			isa = PBXGroup;
+			children = (
+				B5BFDD0F1CAB3A3D00AC090B /* privacy-policy.pdf */,
+				B5BFDD101CAB3A3D00AC090B /* terms-of-service.pdf */,
+			);
+			name = PDFS;
+			sourceTree = "<group>";
+		};
+		B5CD52651C81746700A65CFD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B52A717B1C9F360800EB8642 /* message_sent_alert.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		B5F207C61C991C4F007E934C /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B52A717D1C9F376D00EB8642 /* logo.png */,
+				B5F207EF1C9920E1007E934C /* app_icon83.png */,
+				B5F207D71C991FAB007E934C /* app_icon-29.png */,
+				B5F207D81C991FAB007E934C /* app_icon-29@2x.png */,
+				B5F207D91C991FAB007E934C /* app_icon-29@3x.png */,
+				B5F207DA1C991FAB007E934C /* app_icon-40.png */,
+				B5F207DB1C991FAB007E934C /* app_icon-40@2x.png */,
+				B5F207DC1C991FAB007E934C /* app_icon-40@3x.png */,
+				B5F207DD1C991FAB007E934C /* app_icon-60@2x.png */,
+				B5F207DE1C991FAB007E934C /* app_icon-60@3x.png */,
+				B5F207DF1C991FAB007E934C /* app_icon-76.png */,
+				B5F207E01C991FAB007E934C /* app_icon-76@2x.png */,
+				B5F207E11C991FAB007E934C /* app_icon-512.png */,
+				B5F207E21C991FAB007E934C /* app_icon-512@2x.png */,
+			);
+			path = "App Icons";
+			sourceTree = "<group>";
+		};
+		B5F70CCF1C7D588D00EC59A1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B5415C991CB5B64F000CD19D /* login-rectangle.png */,
+				B5F207C61C991C4F007E934C /* App Icons */,
+				B5CD52631C8151C400A65CFD /* Convo-send-button.png */,
+				B5F70D191C7F769C00EC59A1 /* Message-NewIcon.png */,
+				B5F70D1B1C7F857B00EC59A1 /* Message-menu.png */,
+				B5F70CFF1C7D6AFA00EC59A1 /* Sign-_0000s_0001_Sign-in.png */,
+				B5F70CFE1C7D6AFA00EC59A1 /* Sign-_0000s_0000_back.png */,
+				B5F70D001C7D6AFA00EC59A1 /* Sign-_0002s_0000_arrow.png */,
+				B5F70D011C7D6AFA00EC59A1 /* Sign-_0002s_0002_button.png */,
+				B5F70D101C7E4DDE00EC59A1 /* sign-signup.png */,
+				B5F70D021C7D6AFA00EC59A1 /* Sign-_0003s_0000_input-line.png */,
+				B5F70D031C7D6AFA00EC59A1 /* Sign-_0004s_0000_help.png */,
+				B5F70CD11C7D588D00EC59A1 /* Intro-_0000s_0001_log-in.png */,
+				B5F70D1F1C7F894B00EC59A1 /* Message-new.png */,
+				B5F70D1D1C7F87A300EC59A1 /* Message-Messages.png */,
+				B5F70CD01C7D588D00EC59A1 /* Intro-_0000s_0000_Layer-2.png */,
+				B5F70CD21C7D588D00EC59A1 /* Intro-_0001s_0000_Sign-Up.png */,
+				B5F70CD31C7D588D00EC59A1 /* Intro-_0002s_0000_overlay.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		B5F70D211C7F9C9700EC59A1 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B52A71781C9F30AB00EB8642 /* SWRevealViewController.h */,
+				B52A71791C9F30AB00EB8642 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			path = "../../../../Downloads/SWRevealViewController-master/SWRevealViewController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A9AD321C7D34C5007C78CA /* Cypher Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A9AD5D1C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher Chat" */;
+			buildPhases = (
+				4989131520F66632CFEE3720 /* [CP] Check Pods Manifest.lock */,
+				B5A9AD2F1C7D34C5007C78CA /* Sources */,
+				B5A9AD301C7D34C5007C78CA /* Frameworks */,
+				B5A9AD311C7D34C5007C78CA /* Resources */,
+				09FB35D433CAD4D7A55DEAE0 /* [CP] Embed Pods Frameworks */,
+				5026D3E759DE2738D6082553 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cypher Chat";
+			productName = CryptChat;
+			productReference = B5A9AD331C7D34C5007C78CA /* Cypher Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A9AD481C7D34C6007C78CA /* Cypher ChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A9AD601C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher ChatTests" */;
+			buildPhases = (
+				B5A9AD451C7D34C6007C78CA /* Sources */,
+				B5A9AD461C7D34C6007C78CA /* Frameworks */,
+				B5A9AD471C7D34C6007C78CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cypher ChatTests";
+			productName = CryptChatTests;
+			productReference = B5A9AD491C7D34C6007C78CA /* Cypher Chat.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5A9AD531C7D34C6007C78CA /* Cypher ChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A9AD631C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher ChatUITests" */;
+			buildPhases = (
+				B5A9AD501C7D34C6007C78CA /* Sources */,
+				B5A9AD511C7D34C6007C78CA /* Frameworks */,
+				B5A9AD521C7D34C6007C78CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A9AD561C7D34C6007C78CA /* PBXTargetDependency */,
+			);
+			name = "Cypher ChatUITests";
+			productName = CryptChatUITests;
+			productReference = B5A9AD541C7D34C6007C78CA /* Cypher Chat.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A9AD2B1C7D34C5007C78CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Elo Technology Sciences";
+				TargetAttributes = {
+					B5A9AD321C7D34C5007C78CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8KAN5HF8C2;
+						LastSwiftMigration = 0820;
+					};
+					B5A9AD481C7D34C6007C78CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B5A9AD321C7D34C5007C78CA;
+					};
+					B5A9AD531C7D34C6007C78CA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B5A9AD321C7D34C5007C78CA;
+					};
+				};
+			};
+			buildConfigurationList = B5A9AD2E1C7D34C5007C78CA /* Build configuration list for PBXProject "Cypher Chat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A9AD2A1C7D34C5007C78CA;
+			productRefGroup = B5A9AD341C7D34C5007C78CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A9AD321C7D34C5007C78CA /* Cypher Chat */,
+				B5A9AD481C7D34C6007C78CA /* Cypher ChatTests */,
+				B5A9AD531C7D34C6007C78CA /* Cypher ChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A9AD311C7D34C5007C78CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F70D0A1C7D6AFA00EC59A1 /* Sign-_0004s_0000_help.png in Resources */,
+				B5F207E91C991FAB007E934C /* app_icon-60@2x.png in Resources */,
+				B5415C9A1CB5B64F000CD19D /* login-rectangle.png in Resources */,
+				B5F70D091C7D6AFA00EC59A1 /* Sign-_0003s_0000_input-line.png in Resources */,
+				B5F70D081C7D6AFA00EC59A1 /* Sign-_0002s_0002_button.png in Resources */,
+				B5F70CD71C7D588D00EC59A1 /* Intro-_0002s_0000_overlay.png in Resources */,
+				B5CD52641C8151C400A65CFD /* Convo-send-button.png in Resources */,
+				B5F70D1A1C7F769C00EC59A1 /* Message-NewIcon.png in Resources */,
+				B52A717C1C9F360800EB8642 /* message_sent_alert.mp3 in Resources */,
+				B5F70D111C7E4DDE00EC59A1 /* sign-signup.png in Resources */,
+				B5F207E71C991FAB007E934C /* app_icon-40@2x.png in Resources */,
+				B5F207E51C991FAB007E934C /* app_icon-29@3x.png in Resources */,
+				B52A717E1C9F376D00EB8642 /* logo.png in Resources */,
+				B5F70D1E1C7F87A300EC59A1 /* Message-Messages.png in Resources */,
+				B5F207F01C9920E1007E934C /* app_icon83.png in Resources */,
+				B5A9AD431C7D34C6007C78CA /* LaunchScreen.storyboard in Resources */,
+				B5F207EC1C991FAB007E934C /* app_icon-76@2x.png in Resources */,
+				B5F766461C8651E1003D77B2 /* Localizable.strings in Resources */,
+				B5BFDD121CAB3A3D00AC090B /* terms-of-service.pdf in Resources */,
+				B5F70D071C7D6AFA00EC59A1 /* Sign-_0002s_0000_arrow.png in Resources */,
+				B5F207ED1C991FAB007E934C /* app_icon-512.png in Resources */,
+				B5F207E31C991FAB007E934C /* app_icon-29.png in Resources */,
+				B5F207E61C991FAB007E934C /* app_icon-40.png in Resources */,
+				B5F207EE1C991FAB007E934C /* app_icon-512@2x.png in Resources */,
+				B5F207EA1C991FAB007E934C /* app_icon-60@3x.png in Resources */,
+				B5BFDD111CAB3A3D00AC090B /* privacy-policy.pdf in Resources */,
+				B5F70CD61C7D588D00EC59A1 /* Intro-_0001s_0000_Sign-Up.png in Resources */,
+				B52A71771C9CC05900EB8642 /* Main.storyboard in Resources */,
+				B5F207E41C991FAB007E934C /* app_icon-29@2x.png in Resources */,
+				B5F70D1C1C7F857B00EC59A1 /* Message-menu.png in Resources */,
+				B5F70D201C7F894B00EC59A1 /* Message-new.png in Resources */,
+				B5F207EB1C991FAB007E934C /* app_icon-76.png in Resources */,
+				B5F70D051C7D6AFA00EC59A1 /* Sign-_0000s_0000_back.png in Resources */,
+				B5F70CD51C7D588D00EC59A1 /* Intro-_0000s_0001_log-in.png in Resources */,
+				B5F70CD41C7D588D00EC59A1 /* Intro-_0000s_0000_Layer-2.png in Resources */,
+				B5A9AD401C7D34C6007C78CA /* Assets.xcassets in Resources */,
+				B5F70D061C7D6AFA00EC59A1 /* Sign-_0000s_0001_Sign-in.png in Resources */,
+				B5F207E81C991FAB007E934C /* app_icon-40@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD471C7D34C6007C78CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD521C7D34C6007C78CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09FB35D433CAD4D7A55DEAE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cypher Chat/Pods-Cypher Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4989131520F66632CFEE3720 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5026D3E759DE2738D6082553 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cypher Chat/Pods-Cypher Chat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A9AD2F1C7D34C5007C78CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5909E9D1C81AEAD00CCFF7E /* SearchUsersViewController.swift in Sources */,
+				B5293ED71C9A9EBB00104FDE /* STPPaymentViewController.swift in Sources */,
+				B5F207C51C990364007E934C /* EmptyDataSetMessagesViewController.swift in Sources */,
+				B5F70D131C7E531E00EC59A1 /* MessagesView.swift in Sources */,
+				B59AD52A1CACDB0300FAE8CF /* AccountEditViewController.swift in Sources */,
+				B5F70CFD1C7D654300EC59A1 /* SignUpViewController.swift in Sources */,
+				B5415C981CB5A2CF000CD19D /* AccountStatus.swift in Sources */,
+				B5909E961C81A84600CCFF7E /* SaveMostRecentMessage.swift in Sources */,
+				B5F70CD91C7D5A7500EC59A1 /* IntroViewController.swift in Sources */,
+				B5F70CCE1C7D38CB00EC59A1 /* LoginViewController.swift in Sources */,
+				B5F70D271C7FBB7300EC59A1 /* Reveal.swift in Sources */,
+				B5A146A51C87F8FC0063E9CD /* SINMessagetoCMChatMessage.swift in Sources */,
+				B5293ED51C9A4C6D00104FDE /* TokenViewController.swift in Sources */,
+				B5F70D0D1C7D83CE00EC59A1 /* Config.swift in Sources */,
+				B596014B1CB723BE00F0A047 /* ColorPickerViewController.swift in Sources */,
+				B5F70D2B1C7FCB5F00EC59A1 /* CMDialogTableTableViewController.swift in Sources */,
+				B5F70D291C7FC1EF00EC59A1 /* MenuViewController.swift in Sources */,
+				B52A717A1C9F30AB00EB8642 /* SWRevealViewController.m in Sources */,
+				B5D610F71C91F4CE00ED44DE /* AccountGenerationViewController.swift in Sources */,
+				B5A9AD371C7D34C5007C78CA /* AppDelegate.swift in Sources */,
+				B596D6271CC68B7D003A68F2 /* SaveMessageOnParse.swift in Sources */,
+				B5293ED31C99C2FA00104FDE /* ForgotPasswordViewController.swift in Sources */,
+				B5BFDD141CAB3A7400AC090B /* DocumentViewController.swift in Sources */,
+				B5F207C01C9732DF007E934C /* EmptyDataSetViewController.swift in Sources */,
+				B5F70D171C7E9E9E00EC59A1 /* ChatMatesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD451C7D34C6007C78CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A9AD501C7D34C6007C78CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A9AD591C7D34C6007C78CA /* CryptChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A9AD561C7D34C6007C78CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A9AD321C7D34C5007C78CA /* Cypher Chat */;
+			targetProxy = B5A9AD551C7D34C6007C78CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A9AD411C7D34C6007C78CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A9AD421C7D34C6007C78CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A9AD5B1C7D34C6007C78CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A9AD5C1C7D34C6007C78CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A9AD5E1C7D34C6007C78CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05897C3348093A52167705DE /* Pods-Cypher Chat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CryptChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChat;
+				PRODUCT_NAME = "Cypher Chat";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Ben/Documents/Xcode/CryptChat/CryptChat/CypherChat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A9AD5F1C7D34C6007C78CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D05DAE9413C6B2EAACA177 /* Pods-Cypher Chat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CryptChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChat;
+				PRODUCT_NAME = "Cypher Chat";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Ben/Documents/Xcode/CryptChat/CryptChat/CypherChat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5A9AD611C7D34C6007C78CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChatTests;
+				PRODUCT_NAME = "Cypher Chat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cypher Chat.app/Cypher Chat";
+			};
+			name = Debug;
+		};
+		B5A9AD621C7D34C6007C78CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CryptChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChatTests;
+				PRODUCT_NAME = "Cypher Chat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cypher Chat.app/Cypher Chat";
+			};
+			name = Release;
+		};
+		B5A9AD641C7D34C6007C78CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CryptChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChatUITests;
+				PRODUCT_NAME = "Cypher Chat";
+				TEST_TARGET_NAME = CryptChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B5A9AD651C7D34C6007C78CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CryptChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Elo.CryptChatUITests;
+				PRODUCT_NAME = "Cypher Chat";
+				TEST_TARGET_NAME = CryptChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A9AD2E1C7D34C5007C78CA /* Build configuration list for PBXProject "Cypher Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A9AD5B1C7D34C6007C78CA /* Debug */,
+				B5A9AD5C1C7D34C6007C78CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A9AD5D1C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A9AD5E1C7D34C6007C78CA /* Debug */,
+				B5A9AD5F1C7D34C6007C78CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A9AD601C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher ChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A9AD611C7D34C6007C78CA /* Debug */,
+				B5A9AD621C7D34C6007C78CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A9AD631C7D34C6007C78CA /* Build configuration list for PBXNativeTarget "Cypher ChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A9AD641C7D34C6007C78CA /* Debug */,
+				B5A9AD651C7D34C6007C78CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A9AD2B1C7D34C5007C78CA /* Project object */;
+}

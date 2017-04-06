@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  CryptChat
+
+  Created by Benjamin Elo on 3/1/16.
+  Copyright © 2016 Elo Software. All rights reserved.
+*/
+
+SIN_INCOMING_IM = "New message on Cypher Chat!";

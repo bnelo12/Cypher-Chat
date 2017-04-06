@@ -1,0 +1,36 @@
+PODS:
+  - DGTemplateLayoutCell (1.1.2)
+  - DZNEmptyDataSet (1.8.1)
+  - Heimdall (1.1.2)
+  - M13ProgressSuite (1.2.9)
+  - SAConfettiView (0.1.8)
+  - SCLAlertView (0.7.0)
+  - SinchRTC (3.10.1)
+  - Stripe (9.4.0)
+  - SwiftHSVColorPicker (1.1.1)
+
+DEPENDENCIES:
+  - DGTemplateLayoutCell (~> 1.1.2)
+  - DZNEmptyDataSet
+  - Heimdall
+  - M13ProgressSuite
+  - SAConfettiView
+  - SCLAlertView
+  - SinchRTC
+  - Stripe
+  - SwiftHSVColorPicker
+
+SPEC CHECKSUMS:
+  DGTemplateLayoutCell: 201d037ba21df128c3b3b150a713e52959cd1d83
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Heimdall: 12f0d8753ffea93c24c7665a3ddc625154d508cd
+  M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SinchRTC: 6c6fb1c23d9ef4aeb89fdaa87121162f4e234bb4
+  Stripe: '0957cc85df5c3df153e6fb44d307ea4b778b6bd1'
+  SwiftHSVColorPicker: 69c9028dea168e0f8ee2439d31a899cf1df95678
+
+PODFILE CHECKSUM: 96a0d60195e8c0529e4848f7cee0a4557a05a084
+
+COCOAPODS: 1.2.0
