@@ -1,3 +1,3 @@
 # CypherChat
 ![](Examples/chat)
-1[](Examples/mainScreen)
+![](https://github.com/bnelo12/CypherChat/blob/master/Examples/chat.png)
